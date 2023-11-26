@@ -21,7 +21,7 @@ const li=document.createElement("li");
     entered.value="";
   }
   else{
-    alert(" you have to enter a task!");
+    alert(" you forgot to  enter a task!");
   }
  
 }
@@ -36,6 +36,7 @@ taskList.addEventListener("click",function(e){
 if(e.target.tagName==="LI"){
 e.target.classList.toggle("checked");
 }},false);
+
 function deleteTask(task){
   task.remove();
 
